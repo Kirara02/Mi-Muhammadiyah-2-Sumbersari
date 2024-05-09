@@ -1,0 +1,23 @@
+{
+    "_comment": "16x9 untuk background home image, 1x1 untuk visi misi image, 19x6 / 4x6 / 6x8 untuk gambar guru",
+    "logo": "",
+    "backgroundHome": "https://www.smadwiwarna.sch.id/wp-content/uploads/2020/07/1556532236-23314091-ghost-MHL-0924-1-1.jpg",
+    "visiMisi": "images/sekolah.jpg",
+    "teachers": [
+        {
+            "image": "https://pict-b.sindonews.net/dyn/850/pena/news/2023/01/24/212/1003957/kisah-perjuangan-guru-di-kukar-temukan-metode-mengajar-efektif-saat-pandemi-covid19-arr.jpg",
+            "name": "Budi S.Pd",
+            "role": "Guru Agama"
+        },
+        {
+            "image": "https://live.staticflickr.com/5478/11565290294_8dfdd673dc_h.jpg",
+            "name": "name",
+            "role": "role"
+        },
+        {
+            "image": "https://live.staticflickr.com/5478/11565290294_8dfdd673dc_h.jpg",
+            "name": "name",
+            "role": "role"
+        }
+    ]
+}

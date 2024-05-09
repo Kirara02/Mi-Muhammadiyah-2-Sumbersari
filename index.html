@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI Muhammadiyah 2 Sumbersari</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="MI Muhammadiyah 2 Sumbersari, Sekolah Beragamis, Teladan, Cerdas dan Berkualitas, Sehingga berguna bagi Keluarga, Agama dan Negara.">
+    <meta name="author" content="MI 2 Muhammadiyah 2 Sumbersari">
+    <meta name="robots" content="index,follow">
+</head>
+<body>
+    <div class="overflow-x-hidden w-full min-h-dvh">
+        <div class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white z-50" id="loader">
+            <i class="bx bx-loader-alt text-5xl bx-spin"></i>
+        </div>
+        <nav class="nav nav-transparent z-40" id="nav">
+            <p class="pop-up" id="schoolName">MI Muhammadiyah 2 Sumbersari</p>
+            <img src="" alt="" class="w-24 md:w-48 pop-up" id="schoolLogo">
+            <ul class="nav-wrapper">
+                <li class="nav-container pop-up">
+                    <a href="#home" class="nav-link" id="homeNav">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-container pop-up">
+                    <a href="#profile" class="nav-link" id="profileNav">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-container pop-up">
+                    <a href="#informasi" class="nav-link" id="informasiNav">
+                        Informasi
+                    </a>
+                </li>
+                <li class="nav-container pop-up">
+                    <a href="#kontak" class="nav-link" id="kontakNav">
+                        Kontak
+                    </a>
+                </li>
+            </ul>
+        
+            <div class="hidden fixed justify-center items-center top-0 left-0 w-full h-full z-10 bg-white/75 backdrop-blur-sm md:hidden" id="mobileNavMenu">
+                <button class="absolute text-black right-0 top-0 m-4" onclick="this.parentElement.style.display = 'none'">
+                    <i class="bx bx-x text-3xl"></i>
+                </button>
+                <ul class="flex justify-center items-center flex-col gap-4">
+                    <li class="text-black overflow-hidden py-1">
+                        <a href="#home" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="text-black overflow-hidden py-1">
+                        <a href="#profile" class="nav-link">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="text-black overflow-hidden py-1">
+                        <a href="#informasi" class="nav-link">
+                            Informasi
+                        </a>
+                    </li>
+                    <li class="text-black overflow-hidden py-1">
+                        <a href="#kontak" class="nav-link">
+                            Kontak
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="md:hidden pop-up hover:bg-primary p-1 rounded-md transition-colors duration-150 flex justify-center items-center" id="btnMenu" onclick="document.getElementById('mobileNavMenu').style.display = 'flex'">
+                <i class="bx bx-menu text-2xl"></i>
+            </button>
+        </nav>
+        <div class="section w-full h-dvh flex flex-col gap-8 text-center justify-center items-center" id="home">
+            <h1 class="text-white font-bold text-xl md:text-2xl lg:text-5xl pop-up">MI Muhammadiyah 2 Sumbersari</h1>
+            <p class="text-white font-light pop-up">Agamis | Teladan | Cerdas | Berkualitas | Berakhlaqul Karimah</p>
+            <!-- <button class="group relative flex justify-center items-center border-2 border-primary rounded-sm text-white hover:bg-primary transition-colors duration-200 px-12 py-2 font-semibold">
+                <p>Click</p>
+                <i class="bx bx-chevron-right text-2xl absolute duration-150 transition-all right-0 opacity-0 group-hover:opacity-100 group-hover:right-4"></i>
+            </button> -->
+        </div>
+        <div class="section w-full flex flex-col gap-8 p-6 md:p-24 md:justify-center md:items-center" id="profile">
+            <h1 class="pop-up font-semibold text-xl md:text-4xl w-max mx-auto text-primary custom-underline">
+                Visi dan Misi Sekolah
+            </h1>
+            <div class="flex flex-col lg:flex-row gap-4 w-full lg:w-5/6">
+                <div class="w-full md:h-full flex justify-center items-center overflow-hidden rounded-md pop-up">
+                    <img src="" alt="Sekolah" class="w-full aspect-square object-center object-cover rounded-md hover:scale-110 transition-transform duration-100" id="visiMisiImage">
+                </div>
+                <div class="flex flex-col gap-4 w-full">
+                    <div class="">
+                        <h1 class="text-lg md:text-3xl font-semibold text-primary pop-up">Visi</h1>
+                        <p class="text-sm font-light pop-up">Beragamis, Teladan, Cerdas dan Berkualitas, Sehingga berguna bagi Keluarga, Agama dan Negara.</p>
+                    </div>
+                    <div class="">
+                        <h1 class="pop-up text-lg md:text-3xl font-semibold text-primary">Misi</h1>
+                        <ul class="text-sm flex flex-col gap-4">
+                            <li class="flex flex-row gap-4 font-light items-start">
+                                <button class="pop-up flex justify-center items-center p-2 hover:-translate-y-1 duration-150 transition-transform bg-primary text-white rounded-sm">
+                                    <i class="bx bx-check-double text-xl font-semibold"></i>
+                                </button>
+                                <p class="pop-up">Mengedepankan Pendidikan Agama dan Umum untuk meningkatkan kualitas siswa.</p>
+                            </li>
+                            <li class="flex flex-row gap-4 font-light items-start">
+                                <button class="pop-up flex justify-center items-center p-2 hover:-translate-y-1 duration-150 transition-transform bg-primary text-white rounded-sm">
+                                    <i class="bx bx-check-double text-xl font-semibold"></i>
+                                </button>
+                                <p class="pop-up">Mengembangkan dan mengenalkan nilai-nilai akhlaqul karimah yang sesuai ajaran islam dalam kehidupan sehari-hari</p>
+                            </li>
+                            <li class="flex flex-row gap-4 font-light items-start">
+                                <button class="pop-up flex justify-center items-center p-2 hover:-translate-y-1 duration-150 transition-transform bg-primary text-white rounded-sm">
+                                    <i class="bx bx-check-double text-xl font-semibold"></i>
+                                </button>
+                                <p class="pop-up">Membina dan mengembangkan potensi siswa sehingga mampu terampil dan kreatif dalam menghadapi tuntutan zaman, inovatif, dan mandiri dalam bidang sosial, keagamaan, budaya, berbangsa dan bernegara.</p>
+                            </li>
+                            <li class="flex flex-row gap-4 font-light items-start">
+                                <button class="pop-up flex justify-center items-center p-2 hover:-translate-y-1 duration-150 transition-transform bg-primary text-white rounded-sm">
+                                    <i class="bx bx-check-double text-xl font-semibold"></i>
+                                </button>
+                                <p class="pop-up">Meningkatan kebiasaan disiplin dan bertanggungjawab dalam kehidupan bermasyarakat baik dalam lingkungan keluarga, madrasah maupun masyarakat.</p>
+                            </li>
+                            <li class="flex flex-row gap-4 font-light items-start">
+                                <button class="pop-up flex justify-center items-center p-2 hover:-translate-y-1 duration-150 transition-transform bg-primary text-white rounded-sm">
+                                    <i class="bx bx-check-double text-xl font-semibold"></i>
+                                </button>
+                                <p class="pop-up">Menerapkan manajemen berbasis masyarakat.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section w-full relative flex flex-col gap-8 p-4 md:p-24 justify-center items-center" id="informasi">
+            <h1 class="pop-up flex justify-center items-center gap-2 font-semibold text-xl md:text-3xl text-primary custom-underline pb-1">
+                <i class="bx bxs-user-badge"></i>
+                Tenaga Kerja & Pendidik
+            </h1>
+            <div class="scroll-smooth flex flex-row flex-nowrap gap-4 pb-1 overflow-y-hidden overflow-x-scroll snap-x snap-mandatory relative" id="teacherContainer">
+                <div class="hidden group teacher-wrapper">
+                    <div class="group-hover:opacity-100 teacher-info">
+                        <h1 class="group-hover:translate-y-0 group-hover:opacity-100"></h1>
+                        <p class="group-hover:translate-y-0 group-hover:opacity-100"></p>
+                    </div>
+                    <img src="" alt="" class="teacher-image">
+                </div>
+            </div>
+            <button class="pop-up max-md:hidden absolute top-1/2 left-4 -translate-y-1/2 z-10 text-black flex justify-center items-center rounded-full bg-white shadow-sm text-4xl p-2" id="prevTeacherBtn">
+                <i class="bx bx-chevron-left"></i>
+            </button>
+            <button class="pop-up max-md:hidden absolute top-1/2 right-4 -translate-y-1/2 z-10 text-black flex justify-center items-center rounded-full bg-white shadow-sm text-4xl p-2" id="nextTeacherBtn">
+                <i class="bx bx-chevron-right"></i>
+            </button>
+        </div>
+        <div class="section w-full flex flex-col gap-8 p-4 md:p-24 justify-center items-center" id="kontak">
+            <h1 class="pop-up flex justify-center items-center gap-2 font-semibold text-xl md:text-3xl text-primary custom-underline pb-1">
+                <i class="bx bx-phone"></i>
+                Hubungi Kami
+            </h1>
+            <div class="flex flex-col lg:flex-row gap-12 w-5/6">
+                <iframe class="pop-up w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.965278847132!2d107.71935710000001!3d-7.013366400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c10058950b9d%3A0x2528522a390f2ded!2sMI%20MUHAMMADIYAH%202%20SUMBERSARI!5e0!3m2!1sid!2sid!4v1715223424957!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="flex flex-col  max-md:text-sm items-start gap-4">
+                    <a href="#" class="flex justify-center items-center gap-3">
+                        <i class='pop-up bx bxl-facebook-square text-primary text-3xl'></i>
+                        <p class="pop-up font-medium">
+                            MI Muhammadiyah 2 Sumbersari
+                        </p>
+                    </a>
+                    <a href="https://www.instagram.com/mimuhammadiyah2_sumbersari?igsh=aWM2N2ZoZnc3dmsx" class="flex justify-center items-center gap-3">
+                        <i class='pop-up bx bxl-instagram-alt text-primary text-3xl'></i>
+                        <p class="pop-up font-medium">
+                            mimuhammadiyah2_sumbersari
+                        </p>
+                    </a>
+                    <a href="#" class="flex justify-center items-center gap-3">
+                        <i class='pop-up bx bxl-tiktok text-primary text-3xl'></i>
+                        <p class="pop-up font-medium">
+                            mim2_sumbersari
+                        </p>
+                    </a>
+                    <div class="flex max-md:mx-auto justify-center items-center gap-2 custom-underline">
+                        <i class='pop-up bx bxl-whatsapp-square text-5xl text-primary'></i>
+                        <h1 class="pop-up font-semibold text-xl text-primary">Contact Person</h1>
+                    </div>
+                    <div class="mx-auto w-full">
+                        <a href="https://wa.me/+6282110927866" target="_blank" class="pop-up flex flex-row gap-4 justify-between">
+                            <p class="font-medium">Bapak Ade</p>
+                            <p>0821 1092 7866</p>
+                        </a>
+                        <a href="https://wa.me/+62895803800105" target="_blank" class="pop-up flex flex-row gap-4 justify-between">
+                            <p class="font-medium">Bapak Farhan</p>
+                            <p>0895 8038 00105</p>
+                        </a>
+                        <a href="https://wa.me/+628996997459" target="_blank" class="pop-up flex flex-row gap-4 justify-between">
+                            <p class="font-medium">Bapak Egi</p>
+                            <p>0899 6997 459</p>
+                        </a>
+                        <a href="https://wa.me/+6289613740066" target="_blank" class="pop-up flex flex-row gap-4 justify-between">
+                            <p class="font-medium">Ibu Rinrin</p>
+                            <p>0896 1374 0066</p>
+                        </a>
+                        <a href="https://wa.me/+6289648417028" target="_blank" class="pop-up flex flex-row gap-4 justify-between">
+                            <p class="font-medium">Ibu Akmal</p>
+                            <p>0896 4841 7028</p>
+                        </a>
+                        <a href="https://wa.me/+6289654235775" target="_blank" class="pop-up flex flex-row gap-4 justify-between">
+                            <p class="font-medium">Ibu Meri</p>
+                            <p>0896 5423 5775</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center text-center font-light text-xs py-2">
+            <p id="copyright"></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
