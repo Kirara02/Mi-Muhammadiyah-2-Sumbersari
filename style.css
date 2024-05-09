@@ -906,12 +906,12 @@ nav.nav-transparent{
   min-height: 100dvh;
 }
 
-.w-24{
-  width: 6rem;
-}
-
 .w-5\/6{
   width: 83.333333%;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-full{
@@ -921,6 +921,10 @@ nav.nav-transparent{
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-14{
+  width: 3.5rem;
 }
 
 .-translate-y-1\/2{
@@ -1257,14 +1261,6 @@ nav.nav-transparent{
 
   .md\:h-full{
     height: 100%;
-  }
-
-  .md\:w-48{
-    width: 12rem;
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
   }
 
   .md\:items-center{
