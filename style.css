@@ -882,12 +882,20 @@ nav.nav-transparent{
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
 
 .aspect-square{
   aspect-ratio: 1 / 1;
+}
+
+.aspect-video{
+  aspect-ratio: 16 / 9;
 }
 
 .h-96{
@@ -906,12 +914,12 @@ nav.nav-transparent{
   min-height: 100dvh;
 }
 
-.w-5\/6{
-  width: 83.333333%;
+.w-14{
+  width: 3.5rem;
 }
 
-.w-8{
-  width: 2rem;
+.w-5\/6{
+  width: 83.333333%;
 }
 
 .w-full{
@@ -921,10 +929,6 @@ nav.nav-transparent{
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-14{
-  width: 3.5rem;
 }
 
 .-translate-y-1\/2{
@@ -938,6 +942,14 @@ nav.nav-transparent{
 
 .snap-mandatory{
   --tw-scroll-snap-strictness: mandatory;
+}
+
+.grid-flow-row{
+  grid-auto-flow: row;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1029,6 +1041,11 @@ nav.nav-transparent{
   border-color: rgb(117 164 127 / var(--tw-border-opacity));
 }
 
+.border-secondary{
+  --tw-border-opacity: 1;
+  border-color: rgb(165 221 155 / var(--tw-border-opacity));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(117 164 127 / var(--tw-bg-opacity));
@@ -1074,6 +1091,11 @@ nav.nav-transparent{
   padding-right: 3rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1082,6 +1104,11 @@ nav.nav-transparent{
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-1{
@@ -1158,6 +1185,11 @@ nav.nav-transparent{
   color: rgb(117 164 127 / var(--tw-text-opacity));
 }
 
+.text-secondary{
+  --tw-text-opacity: 1;
+  color: rgb(165 221 155 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1225,6 +1257,16 @@ nav.nav-transparent{
   background-color: rgb(117 164 127 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-secondary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 221 155 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:right-4{
   right: 1rem;
 }
@@ -1261,6 +1303,10 @@ nav.nav-transparent{
 
   .md\:h-full{
     height: 100%;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:items-center{

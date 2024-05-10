@@ -1,13 +1,16 @@
 (async () => await fetch("contents.json").then(res => res.json()).then(res => {
+
     const nav = document.getElementById("nav");
     const home = document.getElementById("home");
     const schoolLogo = document.getElementById("schoolLogo");
     const schoolName = document.getElementById("schoolName");
+    const visiMisiImage = document.getElementById("visiMisiImage");
     
     const teacherContainer = document.getElementById("teacherContainer");
+    const galleryContainer = document.getElementById("galleryContainer");
     const prevTeacherBtn = document.getElementById("prevTeacherBtn");
     const nextTeacherBtn = document.getElementById("nextTeacherBtn");
-    const visiMisiImage = document.getElementById("visiMisiImage");
+    const seeMoreBtn = document.getElementById("seeMoreBtn");
 
     if (res.logo) {
         schoolName.remove();
@@ -21,10 +24,11 @@
 
     visiMisiImage.src = res.visiMisi;
 
-    let el = "";
+    let teacherEl = "";
+    let galleryEl = "";
 
     res.teachers.forEach(teacher => {
-        el += `
+        teacherEl += `
         <div class="pop-up group teacher-wrapper">
             <div class="group-hover:opacity-100 teacher-info">
                 <h1 class="group-hover:translate-y-0 group-hover:opacity-100">${teacher.name}</h1>
@@ -35,7 +39,16 @@
         `        
     });
 
-    teacherContainer.innerHTML = el;
+    res.gallery.slice(0,6).forEach(pict => {
+        galleryEl += `
+        <div>
+            <img src="${pict}" alt="${pict.split("/")[1]}" class="rounded-md w-full aspect-video object-center object-cover pop-up">
+        </div>
+        `
+    })
+
+    teacherContainer.innerHTML = teacherEl;
+    galleryContainer.innerHTML = galleryEl;
 
     window.addEventListener("load", async () => {
         gsap.to("#loader", {
@@ -55,7 +68,7 @@
                                 nav.classList.remove("nav-transparent")
                                 document.getElementById(`${v.target.id}Nav`).classList.add("bg-primary", "text-white");
                             }
-        
+
                             gsap.to(`#${v.target.id} .pop-up`, {
                                 y: 0,
                                 opacity: 1,
@@ -63,11 +76,11 @@
                             })
         
                         } else {
-                            document.getElementById(`${v.target.id}Nav`).classList.remove("bg-primary", "text-white");
+                            document.getElementById(`${v.target.id}Nav`)?.classList.remove("bg-primary", "text-white");
                         }
                     });
                 }, {
-                    threshold: 0.5
+                    threshold: 0.4
                 });
         
                 document.querySelectorAll(".section").forEach(v => {
@@ -90,6 +103,20 @@
                     teacherContainer.scrollTo({
                         left: teacherContainer.scrollLeft + 500
                     })
+                });
+
+                seeMoreBtn.addEventListener("click", () => {
+                    galleryEl = "";
+                    res.gallery.slice(6).forEach(pict => {
+                        galleryEl += `
+                        <div>
+                            <img src="${pict}" alt="${pict.split("/")[1]}" class="rounded-md w-full aspect-video object-center object-cover">
+                        </div>
+                        `
+                    });
+
+                    galleryContainer.innerHTML += galleryEl;
+                    seeMoreBtn.remove();
                 });
                 
                 document.getElementById("copyright").innerHTML = `&copy; ${new Date().getFullYear()} All Rights Reserved By MI Muhammadiyah 2 Sumbersari`

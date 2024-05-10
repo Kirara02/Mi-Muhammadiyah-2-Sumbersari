@@ -19,5 +19,6 @@
             "name": "name",
             "role": "role"
         }
-    ]
+    ],
+    "gallery": ["images/galeri1.jpeg","images/galeri2.jpeg","images/galeri3.jpeg","images/galeri4.jpeg","images/galeri5.jpeg","images/galeri6.jpeg"]
 }
