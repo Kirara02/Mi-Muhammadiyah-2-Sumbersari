@@ -2,7 +2,7 @@
   "_comment": "16x9 untuk background home image, 1x1 untuk visi misi image, 19x6 / 4x6 / 6x8 untuk gambar guru",
   "logo": "images/logo.png",
   "backgroundHome": "images/background.jpg",
-  "visiMisi": "images/sekolah.jpg",
+  "visiMisi": "images/siswa.jpg",
   "teachers": [
     {
       "image": "https://pict-b.sindonews.net/dyn/850/pena/news/2023/01/24/212/1003957/kisah-perjuangan-guru-di-kukar-temukan-metode-mengajar-efektif-saat-pandemi-covid19-arr.jpg",
