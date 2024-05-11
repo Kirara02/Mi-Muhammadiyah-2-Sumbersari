@@ -5,19 +5,19 @@
   "visiMisi": "images/siswa.jpg",
   "teachers": [
     {
-      "image": "https://pict-b.sindonews.net/dyn/850/pena/news/2023/01/24/212/1003957/kisah-perjuangan-guru-di-kukar-temukan-metode-mengajar-efektif-saat-pandemi-covid19-arr.jpg",
-      "name": "Budi S.Pd",
+      "image": "images/nura.jpg",
+      "name": "Nura Nurzainal, S.Pd.I",
       "role": "Guru Agama"
     },
     {
-      "image": "https://live.staticflickr.com/5478/11565290294_8dfdd673dc_h.jpg",
-      "name": "name",
-      "role": "role"
+      "image": "images/atep.jpg",
+      "name": "Atep Hidayat, S.Pd",
+      "role": "Guru Kelas"
     },
     {
-      "image": "https://live.staticflickr.com/5478/11565290294_8dfdd673dc_h.jpg",
-      "name": "name",
-      "role": "role"
+      "image": "images/farhan.jpg",
+      "name": "Farhan Rizal Maulana, S.Pd",
+      "role": "Guru Agama"
     }
   ],
   "gallery": [
